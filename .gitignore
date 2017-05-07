@@ -1,0 +1,16 @@
+/* IntelijIDEA files */
+*.iml
+/.idea
+.externalNativeBuild
+/projectFilesBackup
+
+/* Gradle */
+.gradle
+/local.properties
+/build
+
+/* Android Studio */
+/captures
+
+/* Say hello to macOS */
+.DS_Store
