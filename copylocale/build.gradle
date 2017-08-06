@@ -1,3 +1,4 @@
+apply plugin: "com.gradle.plugin-publish"
 apply plugin: 'groovy'
 apply plugin: 'java'
 
@@ -16,4 +17,18 @@ dependencies {
     compile localGroovy()
     compile 'org.codehaus.groovy:groovy-all:2.4.7'
     testCompile 'junit:junit:4.12'
+}
+
+pluginBundle {
+    website = 'https://github.com/itexussoft/CopyLocale'
+    vcsUrl = 'https://github.com/itexussoft/CopyLocale'
+    description = 'Gradle plugin for Android that copies res values'
+    tags = ['android', 'gradle', 'plugin']
+
+    plugins {
+        copyLocalePlugin {
+            id = 'com.itexus.copylocale'
+            displayName = 'CopyLocale'
+        }
+    }
 }
