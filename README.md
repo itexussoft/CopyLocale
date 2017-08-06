@@ -12,10 +12,11 @@ Add the following to your `build.gradle`:
 buildscript {
     repositories {
         ...
+        maven { url "https://plugins.gradle.org/m2/" }
     }
     dependencies {
         ...
-        classpath 'com.itexus:copylocale:0.1.0'
+        classpath "gradle.plugin.com.itexus:copylocale:0.1.0"
     }
 }
 
